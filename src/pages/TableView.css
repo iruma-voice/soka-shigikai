@@ -1,0 +1,80 @@
+.table-container {
+  overflow-x: auto;
+  margin: 1rem 0;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  background: white;
+}
+
+.councilor-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+  white-space: nowrap;
+}
+
+.councilor-table th {
+  background: var(--soka-green);
+  color: white;
+  padding: 12px 10px;
+  text-align: left;
+  font-weight: 500;
+}
+
+.councilor-table td {
+  padding: 12px 10px;
+  border-bottom: 1px solid var(--border-color);
+  cursor: pointer;
+  vertical-align: middle;
+}
+
+.councilor-table tr:hover td {
+  background: var(--soka-green-light);
+}
+
+.num-col {
+  text-align: center !important;
+  width: 50px;
+}
+
+.name-col {
+  width: auto;
+}
+
+.name-cell {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.name-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.table-councilor-name {
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.table-councilor-faction {
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+  margin-top: 2px;
+  white-space: normal;
+  line-height: 1.2;
+}
+
+.table-photo {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.table-photo-placeholder {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: #e2e8f0;
+}
