@@ -456,7 +456,7 @@
         }
       }
     ],
-    "officialPhoto": "http://www.soka-shigikai.jp/voices/GikaiDoc/attach/Giin/Gn79_12_namiki_2022.jpg",
+    "officialPhoto": "/photos/Gn79_12_namiki_2022.jpg",
     "electionPhoto": null,
     "sns": {}
   },
@@ -707,8 +707,8 @@
         }
       }
     ],
-    "officialPhoto": "http://www.soka-shigikai.jp/voices/GikaiDoc/attach/Giin/Gn78_09_nakajima_2022.jpg",
-    "electionPhoto": "https://prod-cdn.go2senkyo.com/public/candidate_images/public/uploads/candidate/393913/thumb_ec91f4e37980723eae8d03f6f230d638.png",
+    "officialPhoto": "/photos/Gn78_09_nakajima_2022.jpg",
+    "electionPhoto": "/photos/thumb_ec91f4e37980723eae8d03f6f230d638.png",
     "sns": {}
   },
   {
@@ -996,8 +996,8 @@
         "isCurrentTerm": false
       }
     ],
-    "officialPhoto": "http://www.soka-shigikai.jp/voices/GikaiDoc/attach/Giin/Gn58_20_satou_riki_2022.jpg",
-    "electionPhoto": "https://prod-cdn.go2senkyo.com/public/candidate_images/public/uploads/candidate/394972/thumb_a77b30260189eeb3127e27cb5a51e152.png",
+    "officialPhoto": "/photos/Gn58_20_satou_riki_2022.jpg",
+    "electionPhoto": "/photos/thumb_a77b30260189eeb3127e27cb5a51e152.png",
     "sns": {}
   },
   {
@@ -1481,8 +1481,8 @@
         "isCurrentTerm": false
       }
     ],
-    "officialPhoto": "http://www.soka-shigikai.jp/voices/GikaiDoc/attach/Giin/Gn59_satou_norikazu_2022.jpg",
-    "electionPhoto": "https://prod-cdn.go2senkyo.com/public/candidate_images/public/uploads/candidate/394966/thumb_5a9da35375aacd4ed96ab4e5294525bc.jpg",
+    "officialPhoto": "/photos/Gn59_satou_norikazu_2022.jpg",
+    "electionPhoto": "/photos/thumb_5a9da35375aacd4ed96ab4e5294525bc.jpg",
     "sns": {}
   },
   {
@@ -1897,7 +1897,7 @@
         "isCurrentTerm": false
       }
     ],
-    "officialPhoto": "http://www.soka-shigikai.jp/voices/GikaiDoc/attach/Giin/Gn46_19_yoshioka_2022.jpg",
+    "officialPhoto": "/photos/Gn46_19_yoshioka_2022.jpg",
     "electionPhoto": null,
     "sns": {}
   },
@@ -2145,7 +2145,7 @@
         "isCurrentTerm": false
       }
     ],
-    "officialPhoto": "http://www.soka-shigikai.jp/voices/GikaiDoc/attach/Giin/Gn45_22_yoshizawa_2022.jpg",
+    "officialPhoto": "/photos/Gn45_22_yoshizawa_2022.jpg",
     "electionPhoto": null,
     "sns": {}
   },
@@ -2552,8 +2552,8 @@
         }
       }
     ],
-    "officialPhoto": "http://www.soka-shigikai.jp/voices/GikaiDoc/attach/Giin/Gn83_05_horigomi_2022.jpg",
-    "electionPhoto": "https://prod-cdn.go2senkyo.com/public/candidate_images/public/uploads/candidate/398693/thumb_33b2bbda56d0a3678918f83abbf50905.png",
+    "officialPhoto": "/photos/Gn83_05_horigomi_2022.jpg",
+    "electionPhoto": "/photos/thumb_33b2bbda56d0a3678918f83abbf50905.png",
     "sns": {}
   },
   {
@@ -2766,8 +2766,8 @@
         "isCurrentTerm": false
       }
     ],
-    "officialPhoto": "http://www.soka-shigikai.jp/voices/GikaiDoc/attach/Giin/Gn67_25_ogawa_2022.jpg",
-    "electionPhoto": "https://prod-cdn.go2senkyo.com/public/candidate_images/public/uploads/candidate/393982/thumb_6cd8cdd53c8ab92de133f8b1ed020ba0.png",
+    "officialPhoto": "/photos/Gn67_25_ogawa_2022.jpg",
+    "electionPhoto": "/photos/thumb_6cd8cdd53c8ab92de133f8b1ed020ba0.png",
     "sns": {}
   },
   {
@@ -3221,8 +3221,8 @@
         }
       }
     ],
-    "officialPhoto": "http://www.soka-shigikai.jp/voices/GikaiDoc/attach/Giin/Gn75_02_kawasaki_2022.jpg",
-    "electionPhoto": "https://prod-cdn.go2senkyo.com/public/candidate_images/public/uploads/candidate/394057/thumb_21aee9049ec666f4905da571b45a7642.png",
+    "officialPhoto": "/photos/Gn75_02_kawasaki_2022.jpg",
+    "electionPhoto": "/photos/thumb_21aee9049ec666f4905da571b45a7642.png",
     "sns": {}
   },
   {
@@ -3635,8 +3635,8 @@
         }
       }
     ],
-    "officialPhoto": "http://www.soka-shigikai.jp/voices/GikaiDoc/attach/Giin/Gn81_03_hirayama_2022.jpg",
-    "electionPhoto": "https://prod-cdn.go2senkyo.com/public/candidate_images/public/uploads/candidate/401344/thumb_2d6b14a0778fb70c63e88af108c31724.png",
+    "officialPhoto": "/photos/Gn81_03_hirayama_2022.jpg",
+    "electionPhoto": "/photos/thumb_2d6b14a0778fb70c63e88af108c31724.png",
     "sns": {}
   },
   {
@@ -4720,8 +4720,8 @@
         "isCurrentTerm": false
       }
     ],
-    "officialPhoto": "http://www.soka-shigikai.jp/voices/GikaiDoc/attach/Giin/Gn80_08_hirano_2022.jpg",
-    "electionPhoto": "https://prod-cdn.go2senkyo.com/public/candidate_images/public/uploads/candidate/401343/thumb_018e99e43f45c79fea553a0182a3e5fb.png",
+    "officialPhoto": "/photos/Gn80_08_hirano_2022.jpg",
+    "electionPhoto": "/photos/thumb_018e99e43f45c79fea553a0182a3e5fb.png",
     "sns": {}
   },
   {
@@ -5186,8 +5186,8 @@
         "isCurrentTerm": false
       }
     ],
-    "officialPhoto": "http://www.soka-shigikai.jp/voices/GikaiDoc/attach/Giin/Gn50_23_hirota_2022.jpg",
-    "electionPhoto": "https://prod-cdn.go2senkyo.com/public/candidate_images/public/uploads/candidate/394978/thumb_2688bbb40429c0ba1eac3f1a082e2695.png",
+    "officialPhoto": "/photos/Gn50_23_hirota_2022.jpg",
+    "electionPhoto": "/photos/thumb_2688bbb40429c0ba1eac3f1a082e2695.png",
     "sns": {}
   },
   {
@@ -5782,8 +5782,8 @@
         "isCurrentTerm": false
       }
     ],
-    "officialPhoto": "http://www.soka-shigikai.jp/voices/GikaiDoc/attach/Giin/Gn61_13_saitou_2022.jpg",
-    "electionPhoto": "https://prod-cdn.go2senkyo.com/public/candidate_images/public/uploads/candidate/395008/thumb_4d1aae9f6c54c85af1e8e7358362d6b5.png",
+    "officialPhoto": "/photos/Gn61_13_saitou_2022.jpg",
+    "electionPhoto": "/photos/thumb_4d1aae9f6c54c85af1e8e7358362d6b5.png",
     "sns": {}
   },
   {
@@ -5980,8 +5980,8 @@
         }
       }
     ],
-    "officialPhoto": "http://www.soka-shigikai.jp/voices/GikaiDoc/attach/Giin/Gn76_04_kimura_2022.jpg",
-    "electionPhoto": "https://prod-cdn.go2senkyo.com/public/candidate_images/public/uploads/candidate/396735/thumb_af0624bb84613e591f623fc9bb1c378c.png",
+    "officialPhoto": "/photos/Gn76_04_kimura_2022.jpg",
+    "electionPhoto": "/photos/thumb_af0624bb84613e591f623fc9bb1c378c.png",
     "sns": {}
   },
   {
@@ -6266,8 +6266,8 @@
         "isCurrentTerm": false
       }
     ],
-    "officialPhoto": "http://www.soka-shigikai.jp/voices/GikaiDoc/attach/Giin/Gn48_24_matsui_2022.jpg",
-    "electionPhoto": "https://prod-cdn.go2senkyo.com/public/candidate_images/public/uploads/candidate/456531/thumb_2697ef33c96832aceeabec297ce0f0c7.jpg",
+    "officialPhoto": "/photos/Gn48_24_matsui_2022.jpg",
+    "electionPhoto": "/photos/thumb_2697ef33c96832aceeabec297ce0f0c7.jpg",
     "sns": {}
   },
   {
@@ -6651,8 +6651,8 @@
         }
       }
     ],
-    "officialPhoto": "http://www.soka-shigikai.jp/voices/GikaiDoc/attach/Giin/Gn84_07_mori_2022.jpg",
-    "electionPhoto": "https://prod-cdn.go2senkyo.com/public/candidate_images/public/uploads/candidate/398691/thumb_a0e68d7876df465939b83c3796d1741f.png",
+    "officialPhoto": "/photos/Gn84_07_mori_2022.jpg",
+    "electionPhoto": "/photos/thumb_a0e68d7876df465939b83c3796d1741f.png",
     "sns": {}
   },
   {
@@ -7265,8 +7265,8 @@
         "isCurrentTerm": false
       }
     ],
-    "officialPhoto": "http://www.soka-shigikai.jp/voices/GikaiDoc/attach/Giin/Gn53_17_tanaka_2022.jpg",
-    "electionPhoto": "https://prod-cdn.go2senkyo.com/public/candidate_images/public/uploads/candidate/394970/thumb_d9092ae48a09bd194e3996fa55e9a1d9.jpg",
+    "officialPhoto": "/photos/Gn53_17_tanaka_2022.jpg",
+    "electionPhoto": "/photos/thumb_d9092ae48a09bd194e3996fa55e9a1d9.jpg",
     "sns": {}
   },
   {
@@ -7721,8 +7721,8 @@
         }
       }
     ],
-    "officialPhoto": "http://www.soka-shigikai.jp/voices/GikaiDoc/attach/Giin/Gn77_11_tagawa_2022.jpg",
-    "electionPhoto": "https://prod-cdn.go2senkyo.com/public/candidate_images/public/uploads/candidate/396750/thumb_f39f89b1c2130c3933ea2b3ac62fc541.png",
+    "officialPhoto": "/photos/Gn77_11_tagawa_2022.jpg",
+    "electionPhoto": "/photos/thumb_f39f89b1c2130c3933ea2b3ac62fc541.png",
     "sns": {}
   },
   {
@@ -7909,8 +7909,8 @@
         "isCurrentTerm": false
       }
     ],
-    "officialPhoto": "http://www.soka-shigikai.jp/voices/GikaiDoc/attach/Giin/Gn56_18_shiraishi_2022.jpg",
-    "electionPhoto": "https://prod-cdn.go2senkyo.com/public/candidate_images/public/uploads/candidate/395007/thumb_bd777e6a45253c2b9adbc42baeba44b9.png",
+    "officialPhoto": "/photos/Gn56_18_shiraishi_2022.jpg",
+    "electionPhoto": "/photos/thumb_bd777e6a45253c2b9adbc42baeba44b9.png",
     "sns": {}
   },
   {
@@ -8540,8 +8540,8 @@
         "isCurrentTerm": false
       }
     ],
-    "officialPhoto": "http://www.soka-shigikai.jp/voices/GikaiDoc/attach/Giin/Gn47_16_yabe_2022.jpg",
-    "electionPhoto": "https://prod-cdn.go2senkyo.com/public/candidate_images/public/uploads/candidate/387122/thumb_59baa54d9c2baa89e18ef242ab419ce6.png",
+    "officialPhoto": "/photos/Gn47_16_yabe_2022.jpg",
+    "electionPhoto": "/photos/thumb_59baa54d9c2baa89e18ef242ab419ce6.png",
     "sns": {}
   },
   {
@@ -9054,8 +9054,8 @@
         "isCurrentTerm": false
       }
     ],
-    "officialPhoto": "http://www.soka-shigikai.jp/voices/GikaiDoc/attach/Giin/Gn71_14_ishikawa_2022.jpg",
-    "electionPhoto": "https://prod-cdn.go2senkyo.com/public/candidate_images/public/uploads/candidate/394999/thumb_271d215264194171d5a0ad51295b0c04.png",
+    "officialPhoto": "/photos/Gn71_14_ishikawa_2022.jpg",
+    "electionPhoto": "/photos/thumb_271d215264194171d5a0ad51295b0c04.png",
     "sns": {}
   },
   {
@@ -9138,8 +9138,8 @@
         "isCurrentTerm": false
       }
     ],
-    "officialPhoto": "http://www.soka-shigikai.jp/voices/GikaiDoc/attach/Giin/Gn57_26_shibano_2022.jpg",
-    "electionPhoto": "https://prod-cdn.go2senkyo.com/public/candidate_images/public/uploads/candidate/394996/thumb_f11b9550fc7ef1a73d7f18137cef5fed.png",
+    "officialPhoto": "/photos/Gn57_26_shibano_2022.jpg",
+    "electionPhoto": "/photos/thumb_f11b9550fc7ef1a73d7f18137cef5fed.png",
     "sns": {}
   },
   {
@@ -9555,8 +9555,8 @@
         "isCurrentTerm": false
       }
     ],
-    "officialPhoto": "http://www.soka-shigikai.jp/voices/GikaiDoc/attach/Giin/Gn64_10_kikuchi_2022.jpg",
-    "electionPhoto": "https://prod-cdn.go2senkyo.com/public/candidate_images/public/uploads/candidate/391963/thumb_438b0b2550245ccee3d4933c6a85c14b.png",
+    "officialPhoto": "/photos/Gn64_10_kikuchi_2022.jpg",
+    "electionPhoto": "/photos/thumb_438b0b2550245ccee3d4933c6a85c14b.png",
     "sns": {}
   },
   {
@@ -10017,8 +10017,8 @@
         }
       }
     ],
-    "officialPhoto": "http://www.soka-shigikai.jp/voices/GikaiDoc/attach/Giin/Gn82_06_fujiwara_2022.jpg",
-    "electionPhoto": "https://prod-cdn.go2senkyo.com/public/candidate_images/public/uploads/candidate/398692/thumb_d72963a32cbc609181564c602202f507.png",
+    "officialPhoto": "/photos/Gn82_06_fujiwara_2022.jpg",
+    "electionPhoto": "/photos/thumb_d72963a32cbc609181564c602202f507.png",
     "sns": {}
   },
   {
@@ -10720,8 +10720,8 @@
         "isCurrentTerm": false
       }
     ],
-    "officialPhoto": "http://www.soka-shigikai.jp/voices/GikaiDoc/attach/Giin/Gn66_15_kanai_2022.jpg",
-    "electionPhoto": "https://prod-cdn.go2senkyo.com/public/candidate_images/public/uploads/candidate/395002/thumb_e0e139a7c0602fa03374081f2e4f08ab.png",
+    "officialPhoto": "/photos/Gn66_15_kanai_2022.jpg",
+    "electionPhoto": "/photos/thumb_e0e139a7c0602fa03374081f2e4f08ab.png",
     "sns": {}
   },
   {
@@ -10838,8 +10838,8 @@
         "isCurrentTerm": false
       }
     ],
-    "officialPhoto": "http://www.soka-shigikai.jp/voices/GikaiDoc/attach/Giin/Gn55_28_suzuki_2022.jpg",
-    "electionPhoto": "https://prod-cdn.go2senkyo.com/public/candidate_images/public/uploads/candidate/456525/thumb_f77f6f368f8817ddfcbb08006130aad4.jpg",
+    "officialPhoto": "/photos/Gn55_28_suzuki_2022.jpg",
+    "electionPhoto": "/photos/thumb_f77f6f368f8817ddfcbb08006130aad4.jpg",
     "sns": {}
   },
   {
@@ -11291,8 +11291,8 @@
         "isCurrentTerm": false
       }
     ],
-    "officialPhoto": "http://www.soka-shigikai.jp/voices/GikaiDoc/attach/Giin/Gn54_27_seki_2022.jpg",
-    "electionPhoto": "https://prod-cdn.go2senkyo.com/public/candidate_images/public/uploads/candidate/394944/thumb_ad6e71b35d39119334ad4ef615b10133.jpg",
+    "officialPhoto": "/photos/Gn54_27_seki_2022.jpg",
+    "electionPhoto": "/photos/thumb_ad6e71b35d39119334ad4ef615b10133.jpg",
     "sns": {}
   }
 ]
