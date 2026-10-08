@@ -130,6 +130,18 @@ export default function Home() {
           該当する情報が見つかりませんでした。
         </div>
       )}
+
+      <div style={{
+        marginTop: '3rem',
+        padding: '1.5rem',
+        backgroundColor: '#f8f9fa',
+        borderRadius: '8px',
+        fontSize: '0.85rem',
+        color: 'var(--text-secondary)',
+        lineHeight: '1.6'
+      }}>
+        ※草加市議会のルールにより、議会三役（議長・副議長・監査）および議会運営委員長は一般質問を行いません。役職就任により実質的な質問可能回数が異なる点にご留意ください。
+      </div>
     </div>
   );
 }
