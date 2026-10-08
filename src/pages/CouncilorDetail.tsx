@@ -1,14 +1,17 @@
+import React, { useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
-import { Globe } from 'lucide-react';
+import { Globe, X } from 'lucide-react';
 import type { Councilor, QuestionItem } from '../types';
 import councilorData from '../data.json';
 import '../profile.css';
+import './Posters.css'; // For modal styles
 
 const typedData = councilorData as Councilor[];
 
 export default function CouncilorDetail() {
   const { name } = useParams();
   const navigate = useNavigate();
+  const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
   const councilor = typedData.find(c => c.councilor === name);
 
@@ -120,6 +123,31 @@ export default function CouncilorDetail() {
           </div>
         )}
       </div>
+
+      {selectedImage && (
+        <div className="poster-modal-overlay" onClick={() => setSelectedImage(null)}>
+          <div className="poster-modal-content" onClick={e => e.stopPropagation()}>
+            <button className="poster-modal-close" onClick={() => setSelectedImage(null)}>
+              <X size={24} />
+            </button>
+            <img src={selectedImage} alt="拡大された選挙公報" className="poster-modal-image" />
+          </div>
+        </div>
+      )}
+
+      {(() => {
+        const imageName = councilor.councilor.replace(/\s+/g, '_').replace('　', '_') + '.png';
+        const imagePath = `/posters/${imageName}`;
+        return (
+          <div className="councilor-poster-section" onClick={() => setSelectedImage(imagePath)}>
+            <h2 className="section-title">選挙公報</h2>
+            <div className="poster-image-wrapper">
+              <img src={imagePath} alt={`${councilor.councilor}の選挙公報`} loading="lazy" />
+            </div>
+            <p className="poster-hint">タップで拡大表示</p>
+          </div>
+        );
+      })()}
 
       <h2 className="section-title">今期の一般質問</h2>
       {renderQuestions(currentTermQs, true)}

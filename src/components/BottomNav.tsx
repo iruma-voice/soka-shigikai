@@ -1,5 +1,5 @@
 import { Link, useLocation } from 'react-router-dom';
-import { LayoutGrid, Table, ArrowUpDown, X } from 'lucide-react';
+import { LayoutGrid, Table, ArrowUpDown, X, Image } from 'lucide-react';
 import { useSearchSort } from '../context/SearchSortContext';
 import { useState } from 'react';
 import './BottomNav.css';
@@ -11,6 +11,7 @@ export default function BottomNav() {
 
   const isHome = location.pathname === '/';
   const isTable = location.pathname === '/table';
+  const isPosters = location.pathname === '/posters';
 
   return (
     <>
@@ -65,6 +66,10 @@ export default function BottomNav() {
         <Link to="/table" className={`nav-item ${isTable ? 'active' : ''}`}>
           <Table size={20} className="nav-icon" />
           <span>リスト(表)</span>
+        </Link>
+        <Link to="/posters" className={`nav-item ${isPosters ? 'active' : ''}`}>
+          <Image size={20} className="nav-icon" />
+          <span>公報</span>
         </Link>
         <button className="nav-item sort-nav-item" onClick={() => setShowSortModal(true)}>
           <ArrowUpDown size={20} className="nav-icon" />

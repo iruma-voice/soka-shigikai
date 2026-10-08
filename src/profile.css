@@ -130,3 +130,37 @@
   font-size: 0.75rem;
   color: #94a3b8;
 }
+
+/* Poster Section Styles */
+.councilor-poster-section {
+  margin: 2rem 0;
+  cursor: pointer;
+  transition: transform 0.2s, opacity 0.2s;
+}
+
+.councilor-poster-section:hover {
+  opacity: 0.9;
+}
+
+.councilor-poster-section .poster-image-wrapper {
+  background-color: white;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.councilor-poster-section .poster-image-wrapper img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.poster-hint {
+  text-align: right;
+  font-size: 0.8rem;
+  color: #6c757d;
+  margin-top: 0.5rem;
+}
