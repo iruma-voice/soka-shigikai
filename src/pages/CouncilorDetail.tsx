@@ -64,7 +64,15 @@ export default function CouncilorDetail() {
                     </div>
                   ))}
                 </div>
-                <div className="newsletter-source">出典: {q.newsletter.source}</div>
+                <div className="newsletter-source">
+                  出典: {q.newsletter.url ? (
+                    <a href={q.newsletter.url} target="_blank" rel="noopener noreferrer" style={{color: 'inherit', textDecoration: 'underline'}}>
+                      {q.newsletter.source}
+                    </a>
+                  ) : (
+                    q.newsletter.source
+                  )}
+                </div>
               </div>
             )}
           </div>

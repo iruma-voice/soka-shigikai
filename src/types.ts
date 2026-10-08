@@ -6,6 +6,7 @@ export interface QuestionItem {
   isCurrentTerm: boolean;
   newsletter?: {
     source: string;
+    url?: string;
     title: string;
     qa: { type: string; text: string }[];
   };
