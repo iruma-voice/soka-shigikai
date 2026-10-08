@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { useSearchSort } from '../context/SearchSortContext';
 import { X } from 'lucide-react';
 import councilorData from '../data.json';
@@ -11,13 +11,13 @@ export default function Posters() {
   let sortedData = [...councilorData];
   switch (sortOption) {
     case 'current_desc':
-      sortedData.sort((a, b) => b.questions_current - a.questions_current);
+      sortedData.sort((a, b) => b.currentTermCount - a.currentTermCount);
       break;
     case 'current_asc':
-      sortedData.sort((a, b) => a.questions_current - b.questions_current);
+      sortedData.sort((a, b) => a.currentTermCount - b.currentTermCount);
       break;
     case 'total_desc':
-      sortedData.sort((a, b) => b.questions_total - a.questions_total);
+      sortedData.sort((a, b) => b.totalCount - a.totalCount);
       break;
     case 'faction_order':
       sortedData.sort((a, b) => a.faction.localeCompare(b.faction, 'ja'));

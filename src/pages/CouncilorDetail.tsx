@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { Globe, X } from 'lucide-react';
 import type { Councilor, QuestionItem } from '../types';
