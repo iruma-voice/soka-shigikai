@@ -77,6 +77,41 @@ export default function Home() {
         <p className="app-subtitle">※今期は2022年12月以降の一般質問を集計</p>
       </header>
 
+      {/* 2026年草加市選挙ナビへの誘導バナー */}
+      <div 
+        onClick={() => navigate('/election')}
+        style={{
+          cursor: 'pointer',
+          background: 'linear-gradient(135deg, #1b5e20 0%, #2e7d32 100%)',
+          color: '#ffffff',
+          padding: '0.85rem 1.25rem',
+          borderRadius: '10px',
+          marginBottom: '1.25rem',
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'space-between',
+          boxShadow: '0 3px 10px rgba(46, 125, 50, 0.2)',
+          transition: 'transform 0.15s ease',
+        }}
+        onMouseEnter={e => (e.currentTarget.style.transform = 'translateY(-2px)')}
+        onMouseLeave={e => (e.currentTarget.style.transform = 'translateY(0)')}
+      >
+        <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
+          <span style={{ fontSize: '1.4rem' }}>🗳️</span>
+          <div>
+            <div style={{ fontWeight: 800, fontSize: '0.95rem' }}>
+              【速報】2026年 草加市長選・市議選 候補者ナビ
+            </div>
+            <div style={{ fontSize: '0.75rem', opacity: 0.9 }}>
+              10/11告示 10/18投開票。公報画像・実績・属性を掲載中
+            </div>
+          </div>
+        </div>
+        <span style={{ fontSize: '0.82rem', fontWeight: 700, background: 'rgba(255,255,255,0.2)', padding: '0.25rem 0.6rem', borderRadius: '6px' }}>
+          開く →
+        </span>
+      </div>
+
       <div className="search-container" style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
         <input 
           type="text" 

@@ -6,6 +6,7 @@ import Home from './pages/Home';
 import TableView from './pages/TableView';
 import CouncilorDetail from './pages/CouncilorDetail';
 import Posters from './pages/Posters';
+import Election2026 from './pages/Election2026';
 import './index.css';
 
 function App() {
@@ -14,9 +15,11 @@ function App() {
       <Router>
         <ScrollToTop />
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<Election2026 />} />
+          <Route path="/cards" element={<Home />} />
           <Route path="/table" element={<TableView />} />
           <Route path="/posters" element={<Posters />} />
+          <Route path="/election" element={<Election2026 />} />
           <Route path="/councilor/:name" element={<CouncilorDetail />} />
         </Routes>
         <BottomNav />
