@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { Globe, X } from 'lucide-react';
 import type { Councilor, QuestionItem } from '../types';
@@ -14,6 +14,12 @@ export default function CouncilorDetail() {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
   const councilor = typedData.find(c => c.councilor === name);
+
+  useEffect(() => {
+    if (councilor) {
+      document.title = `${councilor.councilor} 市議会議員 | 一般質問実績アーカイブ`;
+    }
+  }, [councilor]);
 
   if (!councilor) {
     return (

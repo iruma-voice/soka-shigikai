@@ -982,4 +982,730 @@
   background: rgba(0, 0, 0, 0.5);
 }
 
+/* ==========================================================================
+   2026年草加市選挙 開票確定結果・UI拡張スタイル（UX最適化）
+   ========================================================================== */
+
+/* 開票確定バッジ */
+.election-confirmed-pill {
+  font-size: 0.72rem;
+  font-weight: 800;
+  color: #065f46;
+  background: #d1fae5;
+  border: 1px solid #a7f3d0;
+  padding: 0.22rem 0.55rem;
+  border-radius: 9999px;
+  display: inline-flex;
+  align-items: center;
+  box-shadow: 0 1px 3px rgba(6, 95, 70, 0.1);
+}
+
+.sort-highlight {
+  border-color: #f59e0b !important;
+  background-color: #fffbeb !important;
+  color: #92400e !important;
+  font-weight: 800 !important;
+}
+
+.chip-elected.active {
+  background: linear-gradient(135deg, #d97706, #b45309) !important;
+  border-color: #b45309 !important;
+  color: #ffffff !important;
+  box-shadow: 0 2px 6px rgba(180, 83, 9, 0.3) !important;
+}
+
+/* --------------------------------------------------------------------------
+   開票結果サマリーカード
+   -------------------------------------------------------------------------- */
+.election-summary-card {
+  margin: 0.75rem 1rem;
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+  color: #ffffff;
+  border-radius: 12px;
+  padding: 1rem 1.1rem;
+  box-shadow: 0 4px 16px rgba(15, 23, 42, 0.15);
+}
+
+.summary-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.summary-status-badge {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.88rem;
+  font-weight: 800;
+  color: #fbbf24;
+}
+
+.summary-turnout-tag {
+  font-size: 0.82rem;
+  font-weight: 700;
+  background: rgba(16, 185, 129, 0.2);
+  color: #34d399;
+  border: 1px solid rgba(52, 211, 153, 0.3);
+  padding: 0.25rem 0.6rem;
+  border-radius: 6px;
+  display: inline-flex;
+  align-items: center;
+}
+
+.summary-turnout-tag strong {
+  font-size: 0.95rem;
+  margin: 0 2px;
+}
+
+.summary-meta-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.6rem 1rem;
+  margin-top: 0.75rem;
+}
+
+@media (max-width: 500px) {
+  .summary-meta-grid {
+    grid-template-columns: 1fr;
+    gap: 0.4rem;
+  }
+}
+
+.summary-meta-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.summary-meta-label {
+  font-size: 0.7rem;
+  color: #94a3b8;
+  font-weight: 600;
+}
+
+.summary-meta-val {
+  font-size: 0.86rem;
+  font-weight: 700;
+  color: #f1f5f9;
+}
+
+/* 党派別獲得議席 */
+.party-seats-container {
+  margin-top: 0.9rem;
+  padding-top: 0.8rem;
+  border-top: 1px dashed rgba(255, 255, 255, 0.15);
+}
+
+.party-seats-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.78rem;
+  font-weight: 800;
+  color: #e2e8f0;
+  margin-bottom: 0.5rem;
+}
+
+.party-seats-note {
+  font-size: 0.68rem;
+  color: #94a3b8;
+  font-weight: normal;
+}
+
+.party-seats-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+}
+
+.party-seat-badge {
+  padding: 0.22rem 0.55rem;
+  border-radius: 6px;
+  font-size: 0.75rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.party-seat-badge.has-seats {
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+}
+
+.party-seat-badge.zero-seats {
+  background: rgba(255, 255, 255, 0.04);
+  color: #64748b;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.party-seat-badge .party-name {
+  font-weight: 600;
+}
+
+.party-seat-badge .party-count strong {
+  font-size: 0.85rem;
+  color: #fbbf24;
+}
+
+.party-seat-badge .party-count small {
+  color: #94a3b8;
+  font-size: 0.68rem;
+}
+
+/* --------------------------------------------------------------------------
+   【要件1】当落の視覚的コントラストの最大化
+   -------------------------------------------------------------------------- */
+
+/* 当選者のカードハイライト */
+.candidate-card-elected {
+  background: linear-gradient(135deg, #fffdf5 0%, #fffbeb 40%, #ffffff 100%) !important;
+  border: 1.5px solid #f59e0b !important;
+  box-shadow: 0 4px 14px rgba(245, 158, 11, 0.15) !important;
+  position: relative;
+}
+
+/* 落選者のグレーアウト（透明度 0.6 & グレースケール） */
+.candidate-card-fallen {
+  opacity: 0.62;
+  filter: grayscale(85%);
+  background: #f8fafc !important;
+  border: 1px solid #e2e8f0 !important;
+  transition: all 0.2s ease;
+}
+
+.candidate-card-fallen:hover {
+  opacity: 0.9;
+  filter: grayscale(30%);
+}
+
+/* 当選バッジ */
+.elected-crown-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  background: linear-gradient(135deg, #d97706, #b45309);
+  color: #ffffff;
+  font-size: 0.8rem;
+  font-weight: 800;
+  padding: 0.3rem 0.65rem;
+  border-radius: 9999px;
+  box-shadow: 0 2px 6px rgba(180, 83, 9, 0.25);
+  letter-spacing: 0.02em;
+}
+
+.elected-badge-compact {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.2rem;
+  background: linear-gradient(135deg, #d97706, #b45309);
+  color: #ffffff;
+  font-size: 0.7rem;
+  font-weight: 800;
+  padding: 0.2rem 0.45rem;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(180, 83, 9, 0.2);
+}
+
+.fallen-badge {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #64748b;
+  background: #e2e8f0;
+  padding: 0.25rem 0.55rem;
+  border-radius: 6px;
+}
+
+.fallen-badge-compact {
+  font-size: 0.68rem;
+  font-weight: 700;
+  color: #64748b;
+  background: #e2e8f0;
+  padding: 0.18rem 0.4rem;
+  border-radius: 4px;
+}
+
+/* 市議選公報カード得票ストリップ */
+.card-votes-strip {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  padding: 0.35rem 0.5rem;
+  border-radius: 6px;
+  margin: 0.35rem 0;
+}
+
+.card-votes-strip.strip-elected {
+  background: #fef3c7;
+  border: 1px solid #fde68a;
+  color: #92400e;
+}
+
+.card-votes-strip.strip-fallen {
+  background: #f1f5f9;
+  border: 1px solid #e2e8f0;
+  color: #64748b;
+}
+
+.strip-rank {
+  font-size: 0.72rem;
+  font-weight: 800;
+}
+
+.strip-votes strong {
+  font-size: 0.98rem;
+  font-weight: 800;
+  margin-right: 1px;
+}
+
+.strip-votes small {
+  font-size: 0.72rem;
+  margin-right: 3px;
+}
+
+.strip-share {
+  font-size: 0.7rem;
+  font-weight: 600;
+}
+
+/* 按分票バッジ */
+.fraction-badge {
+  font-size: 0.62rem;
+  font-weight: 800;
+  background: #fed7aa;
+  color: #9a3412;
+  border: 1px solid #fdba74;
+  padding: 0.1rem 0.3rem;
+  border-radius: 4px;
+  cursor: pointer;
+  user-select: none;
+  transition: transform 0.1s ease;
+}
+
+.fraction-badge:hover {
+  transform: scale(1.05);
+}
+
+.fraction-badge-small {
+  font-size: 0.6rem;
+  font-weight: 700;
+  background: #fed7aa;
+  color: #9a3412;
+  border: 1px solid #fdba74;
+  padding: 0.05rem 0.25rem;
+  border-radius: 3px;
+  margin-left: 3px;
+}
+
+.fraction-tooltip-box {
+  background: #fff7ed;
+  border: 1px solid #fdba74;
+  color: #9a3412;
+  font-size: 0.7rem;
+  line-height: 1.4;
+  padding: 0.4rem 0.55rem;
+  border-radius: 6px;
+  margin-bottom: 0.4rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 0.3rem;
+  animation: fadeIn 0.15s ease-out;
+}
+
+/* 市長選得票数ハイライトボックス */
+.votes-highlight-box {
+  padding: 0.65rem 0.85rem;
+  border-radius: 8px;
+  margin: 0.5rem 0 0.4rem 0;
+}
+
+.votes-box-elected {
+  background: #fef3c7;
+  border: 1.5px solid #fde68a;
+}
+
+.votes-box-fallen {
+  background: #f1f5f9;
+  border: 1px solid #e2e8f0;
+}
+
+.votes-number-row {
+  display: flex;
+  align-items: baseline;
+  gap: 0.35rem;
+}
+
+.votes-label {
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: #64748b;
+}
+
+.votes-value {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: #0f172a;
+}
+
+.votes-box-elected .votes-value {
+  color: #b45309;
+}
+
+.votes-unit {
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: #64748b;
+}
+
+.votes-share-pill {
+  margin-left: auto;
+  font-size: 0.75rem;
+  font-weight: 800;
+  padding: 0.15rem 0.45rem;
+  border-radius: 4px;
+  background: rgba(0, 0, 0, 0.06);
+  color: #334155;
+}
+
+.votes-box-elected .votes-share-pill {
+  background: #d97706;
+  color: #ffffff;
+}
+
+.vote-share-bar-bg {
+  width: 100%;
+  height: 6px;
+  background: #e2e8f0;
+  border-radius: 9999px;
+  margin-top: 0.45rem;
+  overflow: hidden;
+}
+
+.vote-share-bar-fill {
+  height: 100%;
+  border-radius: 9999px;
+  transition: width 0.6s ease;
+}
+
+.bar-elected {
+  background: linear-gradient(90deg, #f59e0b, #d97706);
+}
+
+.bar-fallen {
+  background: #94a3b8;
+}
+
+/* --------------------------------------------------------------------------
+   【要件1】1行コンパクトリストの当落ハイライト
+   -------------------------------------------------------------------------- */
+.candidate-row-elected {
+  background: linear-gradient(135deg, #fffdf5 0%, #fffbeb 50%, #ffffff 100%) !important;
+  border-color: #fde68a !important;
+  box-shadow: 0 1px 4px rgba(245, 158, 11, 0.08) !important;
+}
+
+.candidate-row-fallen {
+  opacity: 0.6;
+  filter: grayscale(85%);
+  background: #f8fafc !important;
+  border-color: #e2e8f0 !important;
+  transition: all 0.2s ease;
+}
+
+.candidate-row-fallen:hover {
+  opacity: 0.9;
+  filter: grayscale(20%);
+}
+
+.row-rank-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 38px;
+  margin-right: 4px;
+}
+
+.row-rank-num {
+  font-size: 0.76rem;
+  font-weight: 800;
+  color: #0f172a;
+}
+
+.candidate-row-elected .row-rank-num {
+  color: #b45309;
+}
+
+.row-status-tag {
+  font-size: 0.6rem;
+  font-weight: 800;
+  padding: 0.05rem 0.25rem;
+  border-radius: 3px;
+  line-height: 1.2;
+}
+
+.tag-elected {
+  background: #d97706;
+  color: #ffffff;
+}
+
+.tag-fallen {
+  background: #e2e8f0;
+  color: #64748b;
+}
+
+.row-votes-cell {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  min-width: 76px;
+  margin-right: 0.4rem;
+}
+
+.row-votes-val-line {
+  display: flex;
+  align-items: baseline;
+  gap: 1px;
+}
+
+.row-votes-val {
+  font-size: 0.88rem;
+  font-weight: 800;
+  color: #0f172a;
+}
+
+.candidate-row-elected .row-votes-val {
+  color: #b45309;
+}
+
+.row-votes-unit {
+  font-size: 0.68rem;
+  color: #64748b;
+}
+
+.row-votes-sub {
+  font-size: 0.68rem;
+  color: #64748b;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+}
+
+/* --------------------------------------------------------------------------
+   【要件2】当選ライン（定数28名）ディバイダー
+   -------------------------------------------------------------------------- */
+.election-line-divider {
+  display: flex;
+  align-items: center;
+  margin: 1.25rem 0;
+  width: 100%;
+}
+
+.grid-span-full {
+  grid-column: 1 / -1;
+}
+
+.divider-line {
+  flex: 1;
+  height: 2px;
+  background: repeating-linear-gradient(
+    90deg,
+    #dc2626 0,
+    #dc2626 8px,
+    transparent 8px,
+    transparent 14px
+  );
+}
+
+.divider-pill {
+  padding: 0.45rem 1.1rem;
+  background: #dc2626;
+  color: #ffffff;
+  font-size: 0.8rem;
+  font-weight: 800;
+  border-radius: 9999px;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  box-shadow: 0 3px 10px rgba(220, 38, 38, 0.35);
+  white-space: nowrap;
+  letter-spacing: 0.03em;
+  margin: 0 0.5rem;
+}
+
+/* --------------------------------------------------------------------------
+   【要件3】按分票グローバル注釈
+   -------------------------------------------------------------------------- */
+.fraction-global-note {
+  margin: 1.5rem 0.5rem;
+  padding: 0.85rem 1rem;
+  background: #f0fdf4;
+  border: 1px solid #bbf7d0;
+  border-radius: 10px;
+  display: flex;
+  align-items: flex-start;
+  gap: 0.6rem;
+  font-size: 0.78rem;
+  line-height: 1.55;
+  color: #166534;
+}
+
+.fraction-note-icon {
+  color: #16a34a;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.fraction-global-note strong {
+  color: #14532d;
+  display: block;
+  margin-bottom: 0.2rem;
+}
+
+.fraction-global-note p {
+  margin: 0;
+  color: #166534;
+}
+
+/* --------------------------------------------------------------------------
+   モーダル内開票結果ブロック
+   -------------------------------------------------------------------------- */
+.modal-result-box {
+  margin: 0.6rem 0 0.85rem 0;
+  padding: 0.75rem 0.9rem;
+  background: #ffffff;
+  border: 1.5px solid #e2e8f0;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+}
+
+.hero-elected .modal-result-box {
+  border-color: #fde68a;
+  background: #fffbeb;
+}
+
+.modal-result-title {
+  font-size: 0.72rem;
+  font-weight: 800;
+  color: #64748b;
+  text-transform: uppercase;
+  margin-bottom: 0.4rem;
+}
+
+.modal-result-main {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.modal-result-votes,
+.modal-result-rank,
+.modal-result-share {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-label {
+  font-size: 0.68rem;
+  color: #64748b;
+  font-weight: 600;
+}
+
+.modal-val {
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: #0f172a;
+}
+
+.hero-elected .modal-val {
+  color: #b45309;
+}
+
+.modal-unit {
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: #64748b;
+  margin-left: 1px;
+}
+
+.modal-fraction-alert {
+  margin-top: 0.5rem;
+  padding: 0.35rem 0.5rem;
+  background: #fed7aa;
+  color: #9a3412;
+  font-size: 0.7rem;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.modal-elected-badge {
+  background: linear-gradient(135deg, #d97706, #b45309);
+  color: #ffffff;
+  font-size: 0.82rem;
+  font-weight: 800;
+  padding: 0.28rem 0.65rem;
+  border-radius: 9999px;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.modal-fallen-badge {
+  background: #64748b;
+  color: #ffffff;
+  font-size: 0.82rem;
+  font-weight: 800;
+  padding: 0.28rem 0.65rem;
+  border-radius: 9999px;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+/* 分析タブ・バナーリンク */
+.tab-btn-analytics {
+  background: #f0fdf4 !important;
+  color: #166534 !important;
+  border-color: #bbf7d0 !important;
+  font-weight: 800 !important;
+}
+
+.tab-btn-analytics:hover {
+  background: #dcfce7 !important;
+  border-color: #86efac !important;
+}
+
+.analytics-jump-banner {
+  width: 100%;
+  margin-top: 0.85rem;
+  padding: 0.6rem 0.85rem;
+  background: linear-gradient(135deg, rgba(37, 99, 235, 0.2), rgba(16, 185, 129, 0.2));
+  border: 1px solid rgba(147, 197, 253, 0.4);
+  border-radius: 8px;
+  color: #ffffff;
+  font-size: 0.78rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-align: left;
+}
+
+.analytics-jump-banner:hover {
+  background: linear-gradient(135deg, rgba(37, 99, 235, 0.35), rgba(16, 185, 129, 0.35));
+  border-color: rgba(147, 197, 253, 0.7);
+  transform: translateY(-1px);
+}
+
+
+
 

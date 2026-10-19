@@ -19,7 +19,15 @@
         "website": "https://yamakawa-yuriko.jp",
         "posterUrl": "/posters/2026/mayor_01.webp",
         "hasPoster": true,
-        "note": "現職草加市長（1期）"
+        "note": "現職草加市長（1期）",
+        "result": {
+          "isElected": true,
+          "rank": 1,
+          "votes": 50509,
+          "votesDisplay": "50,509",
+          "voteShare": "58.4%",
+          "hasFraction": false
+        }
       },
       {
         "id": 2,
@@ -34,7 +42,15 @@
         "website": null,
         "posterUrl": "/posters/2026/mayor_02.webp",
         "hasPoster": true,
-        "note": "元草加市長"
+        "note": "元草加市長",
+        "result": {
+          "isElected": false,
+          "rank": 2,
+          "votes": 27576,
+          "votesDisplay": "27,576",
+          "voteShare": "31.9%",
+          "hasFraction": false
+        }
       },
       {
         "id": 3,
@@ -49,9 +65,27 @@
         "website": null,
         "posterUrl": "/posters/2026/mayor_03.webp",
         "hasPoster": true,
-        "note": "新人"
+        "note": "新人",
+        "result": {
+          "isElected": false,
+          "rank": 3,
+          "votes": 8476,
+          "votesDisplay": "8,476",
+          "voteShare": "9.8%",
+          "hasFraction": false
+        }
       }
-    ]
+    ],
+    "resultSummary": {
+      "status": "開票確定",
+      "confirmedAt": "2026年10月19日 午前0:31 確定",
+      "turnout": "43.03%",
+      "turnoutPrev": "40.70%",
+      "turnoutDiff": "+2.33%",
+      "eligibleVoters": "206,709人",
+      "votersCount": "88,944人",
+      "validVotes": "86,561票"
+    }
   },
   "council": {
     "title": "2026年 草加市議会議員一般選挙",
@@ -73,7 +107,16 @@
         "website": "https://x.com/meimu12",
         "posterUrl": "/posters/2026/council_01.webp",
         "hasPoster": true,
-        "existingCouncilorName": null
+        "existingCouncilorName": null,
+        "result": {
+          "isElected": false,
+          "rank": 36,
+          "votes": 562.206,
+          "votesDisplay": "562.206",
+          "voteShare": "0.6%",
+          "hasFraction": true,
+          "fractionNote": "※按分票（同姓・同名等の候補者による案分）により小数点以下の端数が生じています"
+        }
       },
       {
         "id": 2,
@@ -88,7 +131,16 @@
         "website": null,
         "posterUrl": "/posters/2026/council_02.webp",
         "hasPoster": true,
-        "existingCouncilorName": "藤原　みどり"
+        "existingCouncilorName": "藤原　みどり",
+        "result": {
+          "isElected": true,
+          "rank": 21,
+          "votes": 2143,
+          "votesDisplay": "2,143",
+          "voteShare": "2.5%",
+          "hasFraction": false,
+          "fractionNote": null
+        }
       },
       {
         "id": 3,
@@ -103,7 +155,16 @@
         "website": "https://soka-kimura.com/",
         "posterUrl": "/posters/2026/council_03.webp",
         "hasPoster": true,
-        "existingCouncilorName": "木村　忠義"
+        "existingCouncilorName": "木村　忠義",
+        "result": {
+          "isElected": true,
+          "rank": 17,
+          "votes": 2231,
+          "votesDisplay": "2,231",
+          "voteShare": "2.6%",
+          "hasFraction": false,
+          "fractionNote": null
+        }
       },
       {
         "id": 4,
@@ -118,7 +179,16 @@
         "website": null,
         "posterUrl": "/posters/2026/council_04.webp",
         "hasPoster": true,
-        "existingCouncilorName": "吉沢　哲夫"
+        "existingCouncilorName": "吉沢　哲夫",
+        "result": {
+          "isElected": true,
+          "rank": 4,
+          "votes": 4171,
+          "votesDisplay": "4,171",
+          "voteShare": "4.8%",
+          "hasFraction": false,
+          "fractionNote": null
+        }
       },
       {
         "id": 5,
@@ -133,7 +203,16 @@
         "website": "https://soka-riki.com",
         "posterUrl": "/posters/2026/council_05.webp",
         "hasPoster": true,
-        "existingCouncilorName": "佐藤　利器"
+        "existingCouncilorName": "佐藤　利器",
+        "result": {
+          "isElected": true,
+          "rank": 9,
+          "votes": 3025.74,
+          "votesDisplay": "3,025.740",
+          "voteShare": "3.5%",
+          "hasFraction": true,
+          "fractionNote": "※按分票（同姓・同名等の候補者による案分）により小数点以下の端数が生じています"
+        }
       },
       {
         "id": 6,
@@ -148,7 +227,16 @@
         "website": "https://www.yoshinagakazuki.com/",
         "posterUrl": "/posters/2026/council_06.webp",
         "hasPoster": true,
-        "existingCouncilorName": null
+        "existingCouncilorName": null,
+        "result": {
+          "isElected": false,
+          "rank": 33,
+          "votes": 1190,
+          "votesDisplay": "1,190",
+          "voteShare": "1.4%",
+          "hasFraction": false,
+          "fractionNote": null
+        }
       },
       {
         "id": 7,
@@ -163,7 +251,16 @@
         "website": "https://go2senkyo.com/seijika/200395",
         "posterUrl": "/posters/2026/council_07.webp",
         "hasPoster": true,
-        "existingCouncilorName": null
+        "existingCouncilorName": null,
+        "result": {
+          "isElected": true,
+          "rank": 1,
+          "votes": 5469,
+          "votesDisplay": "5,469",
+          "voteShare": "6.3%",
+          "hasFraction": false,
+          "fractionNote": null
+        }
       },
       {
         "id": 8,
@@ -178,7 +275,16 @@
         "website": "https://saito-yuji.com",
         "posterUrl": "/posters/2026/council_08.webp",
         "hasPoster": true,
-        "existingCouncilorName": "斉藤　雄二"
+        "existingCouncilorName": "斉藤　雄二",
+        "result": {
+          "isElected": false,
+          "rank": 32,
+          "votes": 1341,
+          "votesDisplay": "1,341",
+          "voteShare": "1.5%",
+          "hasFraction": false,
+          "fractionNote": null
+        }
       },
       {
         "id": 9,
@@ -193,7 +299,16 @@
         "website": null,
         "posterUrl": "/posters/2026/council_09.webp",
         "hasPoster": true,
-        "existingCouncilorName": "松井　優美子"
+        "existingCouncilorName": "松井　優美子",
+        "result": {
+          "isElected": true,
+          "rank": 15,
+          "votes": 2340,
+          "votesDisplay": "2,340",
+          "voteShare": "2.7%",
+          "hasFraction": false,
+          "fractionNote": null
+        }
       },
       {
         "id": 10,
@@ -208,7 +323,16 @@
         "website": "https://ameblo.jp/norikazusato",
         "posterUrl": "/posters/2026/council_10.webp",
         "hasPoster": true,
-        "existingCouncilorName": "佐藤　憲和"
+        "existingCouncilorName": "佐藤　憲和",
+        "result": {
+          "isElected": true,
+          "rank": 8,
+          "votes": 3354.821,
+          "votesDisplay": "3,354.821",
+          "voteShare": "3.9%",
+          "hasFraction": true,
+          "fractionNote": "※按分票（同姓・同名等の候補者による案分）により小数点以下の端数が生じています"
+        }
       },
       {
         "id": 11,
@@ -223,7 +347,16 @@
         "website": null,
         "posterUrl": "/posters/2026/council_11.webp",
         "hasPoster": true,
-        "existingCouncilorName": "鈴木　由和"
+        "existingCouncilorName": "鈴木　由和",
+        "result": {
+          "isElected": true,
+          "rank": 14,
+          "votes": 2369,
+          "votesDisplay": "2,369",
+          "voteShare": "2.7%",
+          "hasFraction": false,
+          "fractionNote": null
+        }
       },
       {
         "id": 12,
@@ -238,7 +371,16 @@
         "website": null,
         "posterUrl": "/posters/2026/council_12.webp",
         "hasPoster": true,
-        "existingCouncilorName": null
+        "existingCouncilorName": null,
+        "result": {
+          "isElected": true,
+          "rank": 20,
+          "votes": 2162.793,
+          "votesDisplay": "2,162.793",
+          "voteShare": "2.5%",
+          "hasFraction": true,
+          "fractionNote": "※按分票（同姓・同名等の候補者による案分）により小数点以下の端数が生じています"
+        }
       },
       {
         "id": 13,
@@ -253,7 +395,16 @@
         "website": "https://tagawakouji.com",
         "posterUrl": "/posters/2026/council_13.webp",
         "hasPoster": true,
-        "existingCouncilorName": "田川　浩司"
+        "existingCouncilorName": "田川　浩司",
+        "result": {
+          "isElected": true,
+          "rank": 26,
+          "votes": 1843,
+          "votesDisplay": "1,843",
+          "voteShare": "2.1%",
+          "hasFraction": false,
+          "fractionNote": null
+        }
       },
       {
         "id": 14,
@@ -268,7 +419,16 @@
         "website": "https://shibano.info",
         "posterUrl": "/posters/2026/council_14.webp",
         "hasPoster": true,
-        "existingCouncilorName": "芝野　勝利"
+        "existingCouncilorName": "芝野　勝利",
+        "result": {
+          "isElected": true,
+          "rank": 23,
+          "votes": 1900,
+          "votesDisplay": "1,900",
+          "voteShare": "2.2%",
+          "hasFraction": false,
+          "fractionNote": null
+        }
       },
       {
         "id": 15,
@@ -283,7 +443,16 @@
         "website": "https://soka-hisanori-kawasaki.com",
         "posterUrl": "/posters/2026/council_15.webp",
         "hasPoster": true,
-        "existingCouncilorName": "川﨑　久範"
+        "existingCouncilorName": "川﨑　久範",
+        "result": {
+          "isElected": true,
+          "rank": 12,
+          "votes": 2412,
+          "votesDisplay": "2,412",
+          "voteShare": "2.8%",
+          "hasFraction": false,
+          "fractionNote": null
+        }
       },
       {
         "id": 16,
@@ -298,7 +467,16 @@
         "website": "https://www.komei.or.jp/km/souka-mori-satoru",
         "posterUrl": "/posters/2026/council_16.webp",
         "hasPoster": true,
-        "existingCouncilorName": "森　覚"
+        "existingCouncilorName": "森　覚",
+        "result": {
+          "isElected": true,
+          "rank": 22,
+          "votes": 1953,
+          "votesDisplay": "1,953",
+          "voteShare": "2.2%",
+          "hasFraction": false,
+          "fractionNote": null
+        }
       },
       {
         "id": 17,
@@ -313,7 +491,16 @@
         "website": "http://www.komei.or.jp/km/ishikawa-yuichi/",
         "posterUrl": "/posters/2026/council_17.webp",
         "hasPoster": true,
-        "existingCouncilorName": "石川　祐一"
+        "existingCouncilorName": "石川　祐一",
+        "result": {
+          "isElected": true,
+          "rank": 19,
+          "votes": 2175,
+          "votesDisplay": "2,175",
+          "voteShare": "2.5%",
+          "hasFraction": false,
+          "fractionNote": null
+        }
       },
       {
         "id": 18,
@@ -328,7 +515,16 @@
         "website": "https://yamaguchiayumi.jp",
         "posterUrl": "/posters/2026/council_18.webp",
         "hasPoster": true,
-        "existingCouncilorName": null
+        "existingCouncilorName": null,
+        "result": {
+          "isElected": false,
+          "rank": 29,
+          "votes": 1702,
+          "votesDisplay": "1,702",
+          "voteShare": "2.0%",
+          "hasFraction": false,
+          "fractionNote": null
+        }
       },
       {
         "id": 19,
@@ -343,7 +539,16 @@
         "website": null,
         "posterUrl": "/posters/2026/council_19.webp",
         "hasPoster": true,
-        "existingCouncilorName": "白石　孝雄"
+        "existingCouncilorName": "白石　孝雄",
+        "result": {
+          "isElected": true,
+          "rank": 3,
+          "votes": 4433,
+          "votesDisplay": "4,433",
+          "voteShare": "5.1%",
+          "hasFraction": false,
+          "fractionNote": null
+        }
       },
       {
         "id": 20,
@@ -358,7 +563,16 @@
         "website": "https://www.ogawa-team8.com/",
         "posterUrl": "/posters/2026/council_20.webp",
         "hasPoster": true,
-        "existingCouncilorName": "小川　利八"
+        "existingCouncilorName": "小川　利八",
+        "result": {
+          "isElected": false,
+          "rank": 34,
+          "votes": 981,
+          "votesDisplay": "981",
+          "voteShare": "1.1%",
+          "hasFraction": false,
+          "fractionNote": null
+        }
       },
       {
         "id": 21,
@@ -373,7 +587,16 @@
         "website": "https://royrodesign.wixstudio.com/shinmachikazuki",
         "posterUrl": "/posters/2026/council_21.webp",
         "hasPoster": true,
-        "existingCouncilorName": null
+        "existingCouncilorName": null,
+        "result": {
+          "isElected": false,
+          "rank": 35,
+          "votes": 944,
+          "votesDisplay": "944",
+          "voteShare": "1.1%",
+          "hasFraction": false,
+          "fractionNote": null
+        }
       },
       {
         "id": 22,
@@ -388,7 +611,16 @@
         "website": "https://www.tanaka-soka.com",
         "posterUrl": "/posters/2026/council_22.webp",
         "hasPoster": true,
-        "existingCouncilorName": "田中　宣光"
+        "existingCouncilorName": "田中　宣光",
+        "result": {
+          "isElected": true,
+          "rank": 28,
+          "votes": 1754,
+          "votesDisplay": "1,754",
+          "voteShare": "2.0%",
+          "hasFraction": false,
+          "fractionNote": null
+        }
       },
       {
         "id": 23,
@@ -403,7 +635,16 @@
         "website": "https://www.wan-happy.jp",
         "posterUrl": "/posters/2026/council_23.webp",
         "hasPoster": true,
-        "existingCouncilorName": "関　　一幸"
+        "existingCouncilorName": "関　　一幸",
+        "result": {
+          "isElected": true,
+          "rank": 6,
+          "votes": 3596,
+          "votesDisplay": "3,596",
+          "voteShare": "4.1%",
+          "hasFraction": false,
+          "fractionNote": null
+        }
       },
       {
         "id": 24,
@@ -418,7 +659,16 @@
         "website": "https://www.instagram.com/soka.kikuchi",
         "posterUrl": "/posters/2026/council_24.webp",
         "hasPoster": true,
-        "existingCouncilorName": "菊地　慶太"
+        "existingCouncilorName": "菊地　慶太",
+        "result": {
+          "isElected": true,
+          "rank": 5,
+          "votes": 3628,
+          "votesDisplay": "3,628",
+          "voteShare": "4.2%",
+          "hasFraction": false,
+          "fractionNote": null
+        }
       },
       {
         "id": 25,
@@ -433,7 +683,16 @@
         "website": "https://www.komei.or.jp/km/t-kanai/",
         "posterUrl": "/posters/2026/council_25.webp",
         "hasPoster": true,
-        "existingCouncilorName": "金井　俊治"
+        "existingCouncilorName": "金井　俊治",
+        "result": {
+          "isElected": true,
+          "rank": 13,
+          "votes": 2410,
+          "votesDisplay": "2,410",
+          "voteShare": "2.8%",
+          "hasFraction": false,
+          "fractionNote": null
+        }
       },
       {
         "id": 26,
@@ -448,7 +707,16 @@
         "website": "https://asako.info",
         "posterUrl": "/posters/2026/council_26.webp",
         "hasPoster": true,
-        "existingCouncilorName": null
+        "existingCouncilorName": null,
+        "result": {
+          "isElected": true,
+          "rank": 18,
+          "votes": 2178,
+          "votesDisplay": "2,178",
+          "voteShare": "2.5%",
+          "hasFraction": false,
+          "fractionNote": null
+        }
       },
       {
         "id": 27,
@@ -463,7 +731,16 @@
         "website": null,
         "posterUrl": "/posters/2026/council_27.webp",
         "hasPoster": true,
-        "existingCouncilorName": null
+        "existingCouncilorName": null,
+        "result": {
+          "isElected": true,
+          "rank": 16,
+          "votes": 2262,
+          "votesDisplay": "2,262",
+          "voteShare": "2.6%",
+          "hasFraction": false,
+          "fractionNote": null
+        }
       },
       {
         "id": 28,
@@ -478,7 +755,16 @@
         "website": null,
         "posterUrl": "/posters/2026/council_28.webp",
         "hasPoster": true,
-        "existingCouncilorName": null
+        "existingCouncilorName": null,
+        "result": {
+          "isElected": false,
+          "rank": 30,
+          "votes": 1576,
+          "votesDisplay": "1,576",
+          "voteShare": "1.8%",
+          "hasFraction": false,
+          "fractionNote": null
+        }
       },
       {
         "id": 29,
@@ -493,7 +779,16 @@
         "website": "https://www.facebook.com平野あつ子",
         "posterUrl": "/posters/2026/council_29.webp",
         "hasPoster": true,
-        "existingCouncilorName": "平野　厚子"
+        "existingCouncilorName": "平野　厚子",
+        "result": {
+          "isElected": true,
+          "rank": 11,
+          "votes": 2593,
+          "votesDisplay": "2,593",
+          "voteShare": "3.0%",
+          "hasFraction": false,
+          "fractionNote": null
+        }
       },
       {
         "id": 30,
@@ -508,7 +803,16 @@
         "website": "https://negishiemi.com",
         "posterUrl": "/posters/2026/council_30.webp",
         "hasPoster": true,
-        "existingCouncilorName": null
+        "existingCouncilorName": null,
+        "result": {
+          "isElected": false,
+          "rank": 31,
+          "votes": 1516,
+          "votesDisplay": "1,516",
+          "voteShare": "1.7%",
+          "hasFraction": false,
+          "fractionNote": null
+        }
       },
       {
         "id": 31,
@@ -523,7 +827,16 @@
         "website": null,
         "posterUrl": "/posters/2026/council_31.webp",
         "hasPoster": true,
-        "existingCouncilorName": null
+        "existingCouncilorName": null,
+        "result": {
+          "isElected": true,
+          "rank": 2,
+          "votes": 4905,
+          "votesDisplay": "4,905",
+          "voteShare": "5.6%",
+          "hasFraction": false,
+          "fractionNote": null
+        }
       },
       {
         "id": 32,
@@ -538,7 +851,16 @@
         "website": null,
         "posterUrl": "/posters/2026/council_32.webp",
         "hasPoster": true,
-        "existingCouncilorName": "並木　正成"
+        "existingCouncilorName": "並木　正成",
+        "result": {
+          "isElected": true,
+          "rank": 24,
+          "votes": 1881,
+          "votesDisplay": "1,881",
+          "voteShare": "2.2%",
+          "hasFraction": false,
+          "fractionNote": null
+        }
       },
       {
         "id": 33,
@@ -553,7 +875,16 @@
         "website": null,
         "posterUrl": "/posters/2026/council_33.webp",
         "hasPoster": true,
-        "existingCouncilorName": null
+        "existingCouncilorName": null,
+        "result": {
+          "isElected": true,
+          "rank": 27,
+          "votes": 1791.438,
+          "votesDisplay": "1,791.438",
+          "voteShare": "2.1%",
+          "hasFraction": true,
+          "fractionNote": "※按分票（同姓・同名等の候補者による案分）により小数点以下の端数が生じています"
+        }
       },
       {
         "id": 34,
@@ -568,7 +899,16 @@
         "website": "https://x.com/kishiyatsuka11",
         "posterUrl": "/posters/2026/council_34.webp",
         "hasPoster": true,
-        "existingCouncilorName": null
+        "existingCouncilorName": null,
+        "result": {
+          "isElected": true,
+          "rank": 25,
+          "votes": 1854,
+          "votesDisplay": "1,854",
+          "voteShare": "2.1%",
+          "hasFraction": false,
+          "fractionNote": null
+        }
       },
       {
         "id": 35,
@@ -583,7 +923,16 @@
         "website": null,
         "posterUrl": "/posters/2026/council_35.webp",
         "hasPoster": true,
-        "existingCouncilorName": "矢部　正平"
+        "existingCouncilorName": "矢部　正平",
+        "result": {
+          "isElected": true,
+          "rank": 10,
+          "votes": 2777,
+          "votesDisplay": "2,777",
+          "voteShare": "3.2%",
+          "hasFraction": false,
+          "fractionNote": null
+        }
       },
       {
         "id": 36,
@@ -598,7 +947,16 @@
         "website": "https://note.com/vast_auk8238",
         "posterUrl": "/posters/2026/council_36.webp",
         "hasPoster": true,
-        "existingCouncilorName": null
+        "existingCouncilorName": null,
+        "result": {
+          "isElected": false,
+          "rank": 37,
+          "votes": 228,
+          "votesDisplay": "228",
+          "voteShare": "0.3%",
+          "hasFraction": false,
+          "fractionNote": null
+        }
       },
       {
         "id": 37,
@@ -613,8 +971,30 @@
         "website": "https://lit.link/kyokahirayama",
         "posterUrl": "/posters/2026/council_37.webp",
         "hasPoster": true,
-        "existingCouncilorName": "平山　杏香"
+        "existingCouncilorName": "平山　杏香",
+        "result": {
+          "isElected": true,
+          "rank": 7,
+          "votes": 3391,
+          "votesDisplay": "3,391",
+          "voteShare": "3.9%",
+          "hasFraction": false,
+          "fractionNote": null
+        }
       }
-    ]
+    ],
+    "resultSummary": {
+      "status": "開票確定",
+      "confirmedAt": "2026年10月19日 午前2:10 確定",
+      "turnout": "43.03%",
+      "turnoutPrev": "40.70%",
+      "turnoutDiff": "+2.33%",
+      "eligibleVoters": "206,709人",
+      "votersCount": "88,944人",
+      "seats": 28,
+      "candidatesCount": 37,
+      "electedCount": 28,
+      "fallenCount": 9
+    }
   }
 }

@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useSearchSort } from '../context/SearchSortContext';
 import { X } from 'lucide-react';
 import councilorData from '../data.json';
@@ -7,6 +7,10 @@ import './Posters.css';
 export default function Posters() {
   const { sortOption } = useSearchSort();
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
+
+  useEffect(() => {
+    document.title = '2022年 草加市議選 選挙公報アーカイブ | 草加市議会';
+  }, []);
   
   let sortedData = [...councilorData];
   switch (sortOption) {

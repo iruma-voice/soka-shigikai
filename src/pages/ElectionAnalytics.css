@@ -1,0 +1,693 @@
+/* ==========================================================================
+   草加市議会 選挙結果データ分析画面 スタイル定義 (CUD配慮・客観性重視)
+   ========================================================================== */
+
+.analytics-page {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 1rem 100px 1rem;
+  background-color: #f8fafc;
+  min-height: 100vh;
+  color: #0f172a;
+}
+
+/* --------------------------------------------------------------------------
+   ヘッダー
+   -------------------------------------------------------------------------- */
+.analytics-header {
+  padding: 1rem 0 0.5rem 0;
+}
+
+.analytics-header-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.75rem;
+}
+
+.analytics-back-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  background: #ffffff;
+  border: 1px solid #cbd5e1;
+  padding: 0.4rem 0.75rem;
+  border-radius: 8px;
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: #334155;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.analytics-back-btn:hover {
+  background: #f1f5f9;
+  border-color: #94a3b8;
+}
+
+.analytics-badge {
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: #065f46;
+  background: #d1fae5;
+  border: 1px solid #a7f3d0;
+  padding: 0.25rem 0.6rem;
+  border-radius: 9999px;
+  display: inline-flex;
+  align-items: center;
+}
+
+.analytics-title {
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: #0f172a;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 0.25rem 0;
+}
+
+.analytics-subtitle {
+  font-size: 0.82rem;
+  color: #64748b;
+  margin: 0 0 1rem 0;
+}
+
+/* タブコントロール */
+.analytics-nav-tabs {
+  display: flex;
+  gap: 0.5rem;
+  background: #e2e8f0;
+  padding: 3px;
+  border-radius: 10px;
+  margin-bottom: 1.25rem;
+}
+
+.nav-tab-btn {
+  flex: 1;
+  border: none;
+  background: transparent;
+  padding: 0.5rem 0.5rem;
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: #475569;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+
+.nav-tab-btn.active {
+  background: #ffffff;
+  color: #0f172a;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+/* --------------------------------------------------------------------------
+   【PM要件2】会派と党派の厳密な区別の免責・注釈ボックス
+   -------------------------------------------------------------------------- */
+.analytics-disclaimer-box {
+  background: #eff6ff;
+  border: 1.5px solid #93c5fd;
+  border-radius: 10px;
+  padding: 0.85rem 1rem;
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 0.65rem;
+}
+
+.disclaimer-icon {
+  color: #2563eb;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.disclaimer-content strong {
+  display: block;
+  font-size: 0.84rem;
+  color: #1e3a8a;
+  margin-bottom: 0.25rem;
+}
+
+.disclaimer-content p {
+  margin: 0;
+  font-size: 0.78rem;
+  line-height: 1.5;
+  color: #1e40af;
+}
+
+/* --------------------------------------------------------------------------
+   セクション共通
+   -------------------------------------------------------------------------- */
+.analytics-section {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 1.25rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+}
+
+.section-title {
+  font-size: 1.05rem;
+  font-weight: 800;
+  color: #0f172a;
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  margin: 0 0 0.35rem 0;
+  padding-bottom: 0.5rem;
+  border-bottom: 1.5px solid #f1f5f9;
+}
+
+.section-lead {
+  font-size: 0.78rem;
+  color: #64748b;
+  margin: 0 0 1rem 0;
+}
+
+/* --------------------------------------------------------------------------
+   基本指標サマリーグリッド
+   -------------------------------------------------------------------------- */
+.metrics-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.85rem;
+}
+
+@media (max-width: 640px) {
+  .metrics-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.metric-card {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  padding: 0.85rem 1rem;
+}
+
+.metric-label {
+  font-size: 0.74rem;
+  font-weight: 700;
+  color: #64748b;
+  margin-bottom: 0.3rem;
+}
+
+.metric-value-row {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+  margin-bottom: 0.35rem;
+}
+
+.metric-main-val {
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: #0f172a;
+}
+
+.metric-sub-val {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #475569;
+}
+
+.metric-diff-badge {
+  font-size: 0.75rem;
+  font-weight: 800;
+  padding: 0.15rem 0.45rem;
+  border-radius: 4px;
+}
+
+.diff-positive {
+  background: #dcfce7;
+  color: #15803d;
+  border: 1px solid #bbf7d0;
+}
+
+.metric-age-range {
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: #475569;
+}
+
+.metric-sub-text {
+  font-size: 0.73rem;
+  color: #64748b;
+  line-height: 1.4;
+}
+
+/* --------------------------------------------------------------------------
+   改選前 所属会派別の当落状況
+   -------------------------------------------------------------------------- */
+.faction-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.85rem;
+}
+
+@media (max-width: 768px) {
+  .faction-cards-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.faction-card {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  padding: 0.85rem 1rem;
+}
+
+.faction-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.65rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.faction-name {
+  font-size: 0.88rem;
+  font-weight: 800;
+  color: #0f172a;
+}
+
+.faction-total-badge {
+  font-size: 0.72rem;
+  font-weight: 700;
+  background: #e2e8f0;
+  color: #334155;
+  padding: 0.15rem 0.45rem;
+  border-radius: 4px;
+}
+
+.faction-stats-row {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 0.6rem;
+}
+
+.faction-stat-item {
+  flex: 1;
+  padding: 0.4rem 0.5rem;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.stat-label {
+  font-size: 0.65rem;
+  font-weight: 700;
+}
+
+.stat-num {
+  font-size: 0.95rem;
+  font-weight: 800;
+}
+
+.stat-re-elected {
+  background: #f0fdf4;
+  border: 1px solid #bbf7d0;
+  color: #166534;
+}
+
+.stat-fallen {
+  background: #fef2f2;
+  border: 1px solid #fecaca;
+  color: #991b1b;
+}
+
+.stat-retired {
+  background: #f1f5f9;
+  border: 1px solid #cbd5e1;
+  color: #475569;
+}
+
+.faction-members-detail {
+  font-size: 0.73rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  background: #ffffff;
+  padding: 0.5rem 0.6rem;
+  border-radius: 6px;
+  border: 1px solid #e2e8f0;
+}
+
+.member-sub-group {
+  display: flex;
+  align-items: baseline;
+  gap: 0.35rem;
+  line-height: 1.4;
+}
+
+.member-group-label {
+  font-weight: 800;
+  font-size: 0.68rem;
+  flex-shrink: 0;
+  padding: 0.05rem 0.3rem;
+  border-radius: 3px;
+}
+
+.label-re-elected {
+  background: #dcfce7;
+  color: #15803d;
+}
+
+.label-fallen {
+  background: #fee2e2;
+  color: #b91c1c;
+}
+
+.label-retired {
+  background: #e2e8f0;
+  color: #475569;
+}
+
+.member-names {
+  color: #334155;
+}
+
+/* --------------------------------------------------------------------------
+   データテーブル共通
+   -------------------------------------------------------------------------- */
+.party-table-wrapper,
+.councilors-table-wrapper {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.analytics-data-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.8rem;
+  text-align: left;
+}
+
+.analytics-data-table th {
+  background: #f1f5f9;
+  color: #475569;
+  font-weight: 700;
+  padding: 0.65rem 0.75rem;
+  border-bottom: 2px solid #cbd5e1;
+  white-space: nowrap;
+}
+
+.analytics-data-table td {
+  padding: 0.65rem 0.75rem;
+  border-bottom: 1px solid #e2e8f0;
+  color: #1e293b;
+  white-space: nowrap;
+}
+
+.analytics-data-table tr:hover {
+  background-color: #f8fafc;
+}
+
+.party-name-cell {
+  font-size: 0.85rem;
+  color: #0f172a;
+}
+
+.elected-pill {
+  background: #dcfce7;
+  color: #166534;
+  font-weight: 800;
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+  border: 1px solid #bbf7d0;
+}
+
+.breakdown-cell {
+  font-size: 0.76rem;
+  color: #64748b;
+}
+
+/* --------------------------------------------------------------------------
+   【PM要件4】CUD配慮 男女比・年代別分布
+   -------------------------------------------------------------------------- */
+.demographics-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.25rem;
+}
+
+@media (max-width: 768px) {
+  .demographics-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.demo-box {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+.demo-box-title {
+  font-size: 0.88rem;
+  font-weight: 800;
+  color: #0f172a;
+  margin: 0 0 0.85rem 0;
+}
+
+.gender-bar-wrapper {
+  margin-bottom: 0.5rem;
+}
+
+.gender-bar-label-line {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #475569;
+  margin-bottom: 0.35rem;
+}
+
+.cud-stacked-bar {
+  display: flex;
+  height: 34px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.bar-segment {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.75rem;
+  font-weight: 800;
+  color: #ffffff;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 0 0.35rem;
+}
+
+/* CUD高明度配色: 女性は高明度オレンジ、男性は濃色ネイビー */
+.cud-female {
+  background-color: #ea580c; /* サンセットオレンジ (明度高) */
+}
+
+.cud-male {
+  background-color: #1e3a8a; /* ダークネイビー (明度低) */
+}
+
+.cud-legend {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+  padding-top: 0.75rem;
+  border-top: 1px dashed #cbd5e1;
+  font-size: 0.72rem;
+  color: #475569;
+  font-weight: 600;
+}
+
+.legend-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.legend-color-box {
+  width: 14px;
+  height: 14px;
+  border-radius: 3px;
+  display: inline-block;
+}
+
+/* 年代別分布 */
+.age-bars-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.age-row {
+  display: flex;
+  flex-direction: column;
+}
+
+.age-label-cell {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.76rem;
+  font-weight: 700;
+  color: #1e293b;
+  margin-bottom: 0.25rem;
+}
+
+.age-count-tag {
+  color: #0369a1;
+  background: #e0f2fe;
+  padding: 0.05rem 0.35rem;
+  border-radius: 4px;
+  font-size: 0.7rem;
+}
+
+.age-bar-track {
+  width: 100%;
+  height: 14px;
+  background: #e2e8f0;
+  border-radius: 9999px;
+  overflow: hidden;
+}
+
+.age-bar-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #0284c7, #0369a1);
+  border-radius: 9999px;
+  transition: width 0.5s ease;
+}
+
+.age-note-text {
+  font-size: 0.68rem;
+  color: #64748b;
+  margin-top: 0.2rem;
+  line-height: 1.35;
+}
+
+/* --------------------------------------------------------------------------
+   セクション5: 当選議員28名テーブル コントロール
+   -------------------------------------------------------------------------- */
+.table-controls-bar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.6rem;
+  padding: 0.65rem 0.75rem;
+  background: #f1f5f9;
+  border-radius: 8px;
+}
+
+.control-group {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  flex-wrap: wrap;
+}
+
+.control-label {
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: #475569;
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+}
+
+.control-select {
+  padding: 0.35rem 0.5rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #1e293b;
+  background: #ffffff;
+}
+
+.table-summary-line {
+  font-size: 0.74rem;
+  color: #64748b;
+  margin-bottom: 0.5rem;
+}
+
+/* テーブル内のバッジなど */
+.table-name-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.table-kana {
+  font-size: 0.65rem;
+  color: #64748b;
+}
+
+.table-name {
+  font-size: 0.85rem;
+  color: #0f172a;
+}
+
+.gender-tag {
+  font-size: 0.68rem;
+  font-weight: 800;
+  padding: 0.1rem 0.4rem;
+  border-radius: 4px;
+}
+
+.tag-female {
+  background: #ffedd5;
+  color: #c2410c;
+  border: 1px solid #fed7aa;
+}
+
+.tag-male {
+  background: #eff6ff;
+  color: #1e40af;
+  border: 1px solid #bfdbfe;
+}
+
+.status-tag {
+  font-size: 0.68rem;
+  font-weight: 700;
+  padding: 0.1rem 0.35rem;
+  border-radius: 4px;
+}
+
+.tag-new {
+  background: #fef3c7;
+  color: #b45309;
+  border: 1px solid #fde68a;
+}
+
+.tag-incumbent {
+  background: #f1f5f9;
+  color: #334155;
+  border: 1px solid #cbd5e1;
+}
+
+.prev-faction-cell {
+  font-size: 0.74rem;
+  color: #475569;
+}
+
+.table-fraction-tag {
+  display: block;
+  font-size: 0.62rem;
+  color: #c2410c;
+  font-weight: 600;
+}
+
+.row-highlight-female {
+  background-color: #fffaf5;
+}

@@ -1,4 +1,4 @@
-import { useMemo } from 'react';
+import { useMemo, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import type { Councilor, QuestionItem } from '../types';
 import councilorData from '../data.json';
@@ -9,6 +9,10 @@ const typedData = councilorData as Councilor[];
 export default function Home() {
   const { searchTerm, setSearchTerm, sortOption } = useSearchSort();
   const navigate = useNavigate();
+
+  useEffect(() => {
+    document.title = '市議会議員一覧・一般質問実績アーカイブ | 草加市議会';
+  }, []);
 
   const filteredData = useMemo(() => {
     let data = typedData.filter(c => 

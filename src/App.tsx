@@ -7,6 +7,7 @@ import TableView from './pages/TableView';
 import CouncilorDetail from './pages/CouncilorDetail';
 import Posters from './pages/Posters';
 import Election2026 from './pages/Election2026';
+import ElectionAnalytics from './pages/ElectionAnalytics';
 import './index.css';
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
           <Route path="/table" element={<TableView />} />
           <Route path="/posters" element={<Posters />} />
           <Route path="/election" element={<Election2026 />} />
+          <Route path="/election/analytics" element={<ElectionAnalytics />} />
           <Route path="/councilor/:name" element={<CouncilorDetail />} />
         </Routes>
         <BottomNav />
