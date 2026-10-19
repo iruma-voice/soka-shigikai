@@ -11,7 +11,7 @@ export default function Home() {
   const navigate = useNavigate();
 
   useEffect(() => {
-    document.title = '市議会議員一覧・一般質問実績アーカイブ | 草加市議会';
+    document.title = '【非公式】草加市議会議員一覧・一般質問実績アーカイブ';
   }, []);
 
   const filteredData = useMemo(() => {

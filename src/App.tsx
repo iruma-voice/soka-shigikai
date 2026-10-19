@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { SearchSortProvider } from './context/SearchSortContext';
 import BottomNav from './components/BottomNav';
+import SiteDisclaimer from './components/SiteDisclaimer';
 import ScrollToTop from './components/ScrollToTop';
 import Home from './pages/Home';
 import TableView from './pages/TableView';
@@ -24,6 +25,7 @@ function App() {
           <Route path="/election/analytics" element={<ElectionAnalytics />} />
           <Route path="/councilor/:name" element={<CouncilorDetail />} />
         </Routes>
+        <SiteDisclaimer />
         <BottomNav />
       </Router>
     </SearchSortProvider>

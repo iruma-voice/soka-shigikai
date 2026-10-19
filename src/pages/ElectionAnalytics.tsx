@@ -28,7 +28,7 @@ export default function ElectionAnalytics() {
 
   // ページタイトル設定
   useEffect(() => {
-    document.title = '草加市議会 選挙結果データ分析（新旧比較・構成変化） | 2026年草加市選挙';
+    document.title = '【非公式】草加市議会 選挙結果データ分析（新旧比較） | 2026年草加市選挙';
   }, []);
 
   // テーブルソート状態
@@ -176,13 +176,15 @@ export default function ElectionAnalytics() {
 
           {/* 平均年齢 */}
           <div className="metric-card">
-            <div className="metric-label">新議会（28名）の平均年齢</div>
+            <div className="metric-label">議員平均年齢（改選前との比較）</div>
             <div className="metric-value-row">
               <span className="metric-main-val">{BASIC_ANALYTICS_METRICS.averageAge}</span>
-              <span className="metric-age-range">30歳 〜 88歳</span>
+              <span className="metric-diff-badge" style={{ background: '#e0f2fe', color: '#0369a1', borderColor: '#bae6fd' }}>
+                {BASIC_ANALYTICS_METRICS.ageDiff}
+              </span>
             </div>
             <div className="metric-sub-text">
-              最年少: 30歳（現職・ひらやま氏） / 最長老: 88歳（吉沢氏・14期目）
+              改選前（27名） {BASIC_ANALYTICS_METRICS.prevAverageAge} → 新議会（28名） {BASIC_ANALYTICS_METRICS.averageAge}（30歳〜88歳）
             </div>
           </div>
 
@@ -376,34 +378,49 @@ export default function ElectionAnalytics() {
             <div className="cud-legend">
               <span className="legend-item">
                 <span className="legend-color-box cud-female" />
-                女性（高明度オレンジ #ea580c）
+                女性
               </span>
               <span className="legend-item">
                 <span className="legend-color-box cud-male" />
-                男性（濃色ネイビー #1e3a8a）
+                男性
               </span>
             </div>
           </div>
 
-          {/* 年代別分布 */}
+          {/* 年代別分布（全体の円グラフ＋構成比リスト） */}
           <div className="demo-box">
-            <h3 className="demo-box-title">新議会（28名）の年代別分布</h3>
-            <div className="age-bars-container">
-              {AGE_DISTRIBUTION.map(item => (
-                <div key={item.group} className="age-row">
-                  <div className="age-label-cell">
-                    <span className="age-group-name">{item.group}</span>
-                    <span className="age-count-tag">{item.count}名（{item.ratio}）</span>
-                  </div>
-                  <div className="age-bar-track">
-                    <div 
-                      className="age-bar-fill" 
-                      style={{ width: `${(item.count / 10) * 100}%` }}
-                    />
-                  </div>
-                  <div className="age-note-text">{item.note}</div>
+            <div className="demo-box-header">
+              <h3 className="demo-box-title">新議会（28名）の年代別構成</h3>
+              <span className="demo-box-avg-tag">
+                平均 {BASIC_ANALYTICS_METRICS.averageAge}（改選前比 {BASIC_ANALYTICS_METRICS.ageDiff}）
+              </span>
+            </div>
+
+            <div className="age-donut-container">
+              {/* ドーナツ円グラフ */}
+              <div className="age-donut-chart">
+                <div className="age-donut-hole">
+                  <span className="donut-label">平均年齢</span>
+                  <span className="donut-value">{BASIC_ANALYTICS_METRICS.averageAge}</span>
+                  <span className="donut-sub">{BASIC_ANALYTICS_METRICS.ageDiff}</span>
                 </div>
-              ))}
+              </div>
+
+              {/* 年代別構成比リスト */}
+              <div className="age-donut-legend">
+                {AGE_DISTRIBUTION.map(item => (
+                  <div key={item.group} className="donut-legend-row">
+                    <div className="legend-group-cell">
+                      <span className="legend-dot" style={{ backgroundColor: item.color }} />
+                      <span className="legend-group-name">{item.group}</span>
+                    </div>
+                    <div className="legend-count-cell">
+                      <span className="legend-count">{item.count}名</span>
+                      <span className="legend-pct">({item.ratio})</span>
+                    </div>
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
         </div>

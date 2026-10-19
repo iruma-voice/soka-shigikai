@@ -536,16 +536,18 @@ export const GENDER_COMPARISON = {
 
 // 年代別分布データ
 export const AGE_DISTRIBUTION = [
-  { group: "20〜30代", count: 3, ratio: "10.7%", note: "3名全員が女性当選者（ひらやま 30歳、かわぐち 31歳、中村 39歳）" },
-  { group: "40代", count: 5, ratio: "17.9%", note: "岸 41歳、矢部 41歳、佐藤のりかず 41歳、きくち 42歳、浅古 46歳" },
-  { group: "50代", count: 6, ratio: "21.4%", note: "田中のりみつ 50歳、おおこし 54歳、川崎 55歳、鈴木 57歳、さとうりき 58歳、しばの 59歳" },
-  { group: "60代", count: 10, ratio: "35.7%", note: "豊田 60歳、木村 61歳、石川 62歳、田川 62歳、金井 63歳、森 63歳、関 63歳、藤原 63歳、平野 66歳、並木 69歳" },
-  { group: "70代以上", count: 4, ratio: "14.3%", note: "白石 70歳、佐藤けいじ 71歳、松井 76歳、吉沢 88歳" }
+  { group: "20〜30代", count: 3, ratio: "10.7%", color: "#38bdf8", note: "3名全員が女性当選者" },
+  { group: "40代", count: 5, ratio: "17.9%", color: "#2563eb", note: "41歳〜46歳" },
+  { group: "50代", count: 6, ratio: "21.4%", color: "#0d9488", note: "50歳〜59歳" },
+  { group: "60代", count: 10, ratio: "35.7%", color: "#f59e0b", note: "60歳〜69歳（最多層）" },
+  { group: "70代以上", count: 4, ratio: "14.3%", color: "#8b5cf6", note: "70歳〜88歳" }
 ];
 
 // 基本統計指標
 export const BASIC_ANALYTICS_METRICS = {
   averageAge: "56.5歳",
+  prevAverageAge: "58.4歳",
+  ageDiff: "-1.9歳",
   youngest: { age: 30, name: "ひらやま きょうか", status: "現職" },
   newYoungest: { age: 31, name: "かわぐち みほ", status: "新人" },
   oldest: { age: 88, name: "吉沢 哲夫", term: "14期目" },

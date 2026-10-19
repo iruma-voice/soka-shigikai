@@ -1,0 +1,126 @@
+/* サイト共通 免責事項・非公式明記フッター */
+.site-disclaimer-wrapper {
+  max-width: 900px;
+  margin: 2.5rem auto 5.5rem auto;
+  padding: 0 1rem;
+}
+
+.site-disclaimer-card {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-left: 4px solid #64748b;
+  border-radius: 8px;
+  padding: 1rem 1.2rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.03);
+}
+
+.disclaimer-header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.6rem;
+}
+
+.disclaimer-shield-icon {
+  color: #475569;
+  flex-shrink: 0;
+}
+
+.disclaimer-heading {
+  font-size: 0.88rem;
+  font-weight: 800;
+  color: #1e293b;
+  margin: 0;
+}
+
+.disclaimer-lead {
+  font-size: 0.78rem;
+  line-height: 1.55;
+  color: #334155;
+  margin-bottom: 0.75rem;
+}
+
+.disclaimer-lead strong {
+  color: #0f172a;
+}
+
+.disclaimer-points {
+  margin: 0 0 0.85rem 0;
+  padding-left: 1.15rem;
+  font-size: 0.73rem;
+  line-height: 1.55;
+  color: #475569;
+}
+
+.disclaimer-points li {
+  margin-bottom: 0.35rem;
+}
+
+.disclaimer-points strong {
+  color: #1e293b;
+}
+
+.disclaimer-official-links {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  font-size: 0.72rem;
+  padding-top: 0.65rem;
+  border-top: 1px dashed #cbd5e1;
+  color: #64748b;
+}
+
+.links-label {
+  font-weight: 700;
+}
+
+.official-external-link {
+  color: #0284c7;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.2rem;
+  font-weight: 600;
+  transition: color 0.15s ease;
+}
+
+.official-external-link:hover {
+  color: #0369a1;
+  text-decoration: underline;
+}
+
+.link-divider {
+  color: #cbd5e1;
+}
+
+.disclaimer-copyright {
+  margin-top: 0.65rem;
+  font-size: 0.68rem;
+  color: #94a3b8;
+  text-align: center;
+}
+
+@media (max-width: 480px) {
+  .site-disclaimer-wrapper {
+    margin: 2rem auto 5rem auto;
+    padding: 0 0.75rem;
+  }
+
+  .site-disclaimer-card {
+    padding: 0.85rem 0.95rem;
+  }
+
+  .disclaimer-heading {
+    font-size: 0.82rem;
+  }
+
+  .disclaimer-lead {
+    font-size: 0.74rem;
+  }
+
+  .disclaimer-points {
+    font-size: 0.7rem;
+    padding-left: 1rem;
+  }
+}

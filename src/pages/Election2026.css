@@ -1204,11 +1204,14 @@
   gap: 0.2rem;
   background: linear-gradient(135deg, #d97706, #b45309);
   color: #ffffff;
-  font-size: 0.7rem;
+  font-size: 0.72rem;
   font-weight: 800;
-  padding: 0.2rem 0.45rem;
+  padding: 0.2rem 0.5rem;
   border-radius: 4px;
   box-shadow: 0 1px 3px rgba(180, 83, 9, 0.2);
+  white-space: nowrap;
+  flex-shrink: 0;
+  letter-spacing: 0.02em;
 }
 
 .fallen-badge {
@@ -1218,6 +1221,7 @@
   background: #e2e8f0;
   padding: 0.25rem 0.55rem;
   border-radius: 6px;
+  white-space: nowrap;
 }
 
 .fallen-badge-compact {
@@ -1225,8 +1229,10 @@
   font-weight: 700;
   color: #64748b;
   background: #e2e8f0;
-  padding: 0.18rem 0.4rem;
+  padding: 0.18rem 0.45rem;
   border-radius: 4px;
+  white-space: nowrap;
+  flex-shrink: 0;
 }
 
 /* 市議選公報カード得票ストリップ */

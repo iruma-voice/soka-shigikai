@@ -17,7 +17,7 @@ export default function CouncilorDetail() {
 
   useEffect(() => {
     if (councilor) {
-      document.title = `${councilor.councilor} 市議会議員 | 一般質問実績アーカイブ`;
+      document.title = `【非公式】${councilor.councilor} 市議会議員 | 一般質問実績アーカイブ`;
     }
   }, [councilor]);
 

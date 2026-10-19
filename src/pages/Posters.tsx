@@ -9,7 +9,7 @@ export default function Posters() {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
   useEffect(() => {
-    document.title = '2022年 草加市議選 選挙公報アーカイブ | 草加市議会';
+    document.title = '【非公式】2022年 草加市議選 選挙公報アーカイブ';
   }, []);
   
   let sortedData = [...councilorData];

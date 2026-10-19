@@ -251,7 +251,7 @@ export default function Election2026() {
 
   // ページタイトル設定
   useEffect(() => {
-    document.title = '2026年 草加市選挙 開票結果・当選者一覧 | 新旧議会データ分析';
+    document.title = '【非公式】2026年 草加市選挙 開票結果・当選者一覧 | 有志アーカイブ';
   }, []);
 
   // モーダル表示中の背面スクロール固定
@@ -633,18 +633,20 @@ export default function Election2026() {
                         <div className="poster-grid-header">
                           {isElected ? (
                             <span className="elected-badge-compact">
-                              <Award size={12} />
-                              ㊗️ 当選 {c.result?.rank}位
+                              <Award size={11} />
+                              ㊗️ 当選
                             </span>
                           ) : (
                             <span className="fallen-badge-compact">
-                              落選 {c.result?.rank}位
+                              落選
                             </span>
                           )}
-                          <span className="row-id-badge">届出 {c.id}</span>
-                          <span className={`cud-badge ${c.status === '現' ? 'gen' : 'shin'}`}>
-                            {c.status === '現' ? '現' : '新'}
-                          </span>
+                          <div style={{ display: 'flex', alignItems: 'center', gap: '3px' }}>
+                            <span className="row-id-badge">届出 {c.id}</span>
+                            <span className={`cud-badge ${c.status === '現' ? 'gen' : 'shin'}`}>
+                              {c.status === '現' ? '現' : '新'}
+                            </span>
+                          </div>
                         </div>
 
                         {/* 得票数バナー */}
